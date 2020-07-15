@@ -1,8 +1,8 @@
 {
   "name": "test",
   "expo": {
-    "name": "expo-boilerplate-code",
-    "slug": "expo-boilerplate-code",
+    "name": "ORT En CASA",
+    "slug": "ort-en-casa",
     "platforms": [
       "ios",
       "android",
@@ -22,6 +22,10 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "package": "com.ort.encasa",
+      "versionCode": 1
+    },
     "ios": {
       "supportsTablet": true
     }

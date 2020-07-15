@@ -17,7 +17,7 @@ import deviceStorage from './services/deviceStorage';
 
 const isWeb = Platform.OS === 'web';
 
-const INITIAL_ROUTE_NAME = 'StudentScreen';
+const INITIAL_ROUTE_NAME = 'HomeScreen';
 
 const Router = createStackNavigator(
     {

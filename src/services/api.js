@@ -1,3 +1,3 @@
-const api = { url: "http://localhost:8082" };
+const api = { url: "https://ort-encasa.herokuapp.com" };
 
 export default api;

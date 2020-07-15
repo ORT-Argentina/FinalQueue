@@ -1,6 +1,7 @@
 import React, { memo, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Background from '../components/Background';
+import BackButton from '../components/BackButton';
 import Logo from '../components/Logo';
 import Header from '../components/Header';
 import Button from '../components/Button';
@@ -22,7 +23,7 @@ type Props = {
   navigation: Navigation;
 };
 
-const RegisterScreen = ({ navigation }: Props) => {
+const StudentScreen = ({ navigation }: Props) => {
   
   const { addToast } = useToasts();
 
@@ -68,6 +69,8 @@ const RegisterScreen = ({ navigation }: Props) => {
 
   return (
     <Background>
+
+      <BackButton goBack={() => navigation.navigate('HomeScreen')} />
 
       <Logo />
 
@@ -128,4 +131,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default memo(RegisterScreen);
+export default memo(StudentScreen);

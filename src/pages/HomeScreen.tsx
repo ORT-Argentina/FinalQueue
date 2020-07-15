@@ -15,21 +15,18 @@ type Props = {
 const HomeScreen = ({ navigation }: Props) => (
   <Background>
     <Logo />
-    <Header>Pantalla de bienvenida</Header>
-    <Title>ORT en CASA</Title>
-    <Paragraph>
-      Este es un ejemplo de pantalla de login
-    </Paragraph>
-    <Button mode="contained" onPress={() => navigation.navigate('LoginScreen')}>
-      Ingreso
+    <Header>ORT en CASA</Header>
+    <Title>Selecciona tu ROL</Title>
+    <Paragraph>Por Favor Ingresa a donde corresponde.</Paragraph>
+    <Button mode="contained" onPress={() => navigation.navigate('StudentScreen')}>
+      Alumno
     </Button>
     <Button
       mode="outlined"
-      onPress={() => navigation.navigate('RegisterScreen')}
+      onPress={() => navigation.navigate('LoginScreen')}
     >
-      Registro
+      Docente
     </Button>
-    <ButtonExample></ButtonExample>
   </Background>
 );
 
