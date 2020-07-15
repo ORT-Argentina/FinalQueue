@@ -12,6 +12,7 @@ import { Navigation } from '../types';
 import { StackActions, NavigationActions } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import axios from 'axios';
+import api from '../services/api';
 import deviceStorage from '../services/deviceStorage';
 
 type Props = {
@@ -50,7 +51,7 @@ const LoginScreen = ({ navigation }: Props) => {
       });
     */
 
-    let r = axios.post('http://localhost:8082/users/login', {
+    let r = axios.post(api.url.concat('/users/login'), {
       "email": email.value,
       "password": password.value
     }).then(

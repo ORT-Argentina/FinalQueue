@@ -17,9 +17,7 @@ const StudentSuccess = ({ navigation }: Props) => {
             <Logo />
             <Header>Registrado en {student.topic}{student.course}</Header>
             <Title>Tu posición es {student.order}</Title>
-            <Paragraph>
-                    
-            </Paragraph>
+            <Paragraph>Muchas gracias por tu paciencia.</Paragraph>
         </Background>);
 };
 
